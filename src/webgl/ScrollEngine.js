@@ -72,6 +72,10 @@ export class ScrollEngine {
     return Math.min(Math.max(index, 0), Math.max(this.totalItems - 1, 0));
   }
 
+  setTarget(progress) {
+    this.targetProgress = Math.min(Math.max(progress, 0), 1);
+  }
+
   destroy() {
     this.scrollTrigger?.kill();
   }

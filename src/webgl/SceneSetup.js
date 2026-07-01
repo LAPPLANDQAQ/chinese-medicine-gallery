@@ -23,8 +23,8 @@ export class SceneSetup {
     this.camera.position.set(0, -690, 1540);
     this.camera.lookAt(0, -690, 0);
 
-    this.webglScene.background = new THREE.Color("#0b0f19");
-    this.webglScene.fog = new THREE.FogExp2("#0b0f19", 0.00065);
+    this.webglScene.background = new THREE.Color("#0b0a07");
+    this.webglScene.fog = new THREE.FogExp2("#0b0a07", 0.00055);
 
     // WebGL and CSS3D share one camera so particles and HTML cards stay aligned.
     this.webglRenderer = new THREE.WebGLRenderer({
